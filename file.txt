@@ -11,6 +11,8 @@ There is a directory called '.kube' that has config stuff in it.
 kubectl config -h 
 kubectl config get-context
 kubectl config use-context
+kubectl run ngingx --image=nginx 
+"This will create a pod from the docker registry".
 
 
 
