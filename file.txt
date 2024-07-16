@@ -2,4 +2,17 @@ This is a vim edit of the file.txt file.
 Pressing enter does take you to a new line.
 Pressing ESC will get you back to "normal" mode, and then commands like :q! and :wq! will either 
 leave the file without or with saving.
-You have to press i or a to insert text though.
+You have to press i or a to insert text though. 
+
+There is a directory called '.kube' that has config stuff in it.
+
+
+
+kubectl config -h 
+kubectl config get-context
+kubectl config use-context
+
+
+
+
+
