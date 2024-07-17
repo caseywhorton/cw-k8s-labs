@@ -26,4 +26,6 @@ An init container can do something like checking connection statuses, and only i
 Even though it is not always advised, you can edit the yaml using:
 kubectl edit pod ngingx-cw
 
+kubectl run nginx-yaml --image=nginx --dry-run=client -o yaml
 
+kubectl run nginx-yaml --image=nginx --dry-run=client -o yaml > nginx.yaml
