@@ -23,5 +23,7 @@ Gives some great information on the pod.
 
 An init container can do something like checking connection statuses, and only if they run successfully will the other pods run. It's good for conditional deployments.
 
+Even though it is not always advised, you can edit the yaml using:
+kubectl edit pod ngingx-cw
 
 
