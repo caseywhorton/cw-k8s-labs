@@ -1,4 +1,5 @@
 This is a vim edit of the file.txt file. 
+Using :set paste will allow you to paste using insert (i).
 Pressing enter does take you to a new line.
 Pressing ESC will get you back to "normal" mode, and then commands like :q! and :wq! will either 
 leave the file without or with saving.
