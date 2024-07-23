@@ -31,3 +31,4 @@ kubectl run nginx-yaml --image=nginx --dry-run=client -o yaml
 
 kubectl run nginx-yaml --image=nginx --dry-run=client -o yaml > nginx.yaml
 kubectl apply -f nginx.yaml
+kubectl get pods -o wide "this will display a lot more information about the running pods in your namespace."
