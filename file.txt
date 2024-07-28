@@ -5,7 +5,6 @@ Pressing ESC will get you back to "normal" mode, and then commands like :q! and 
 leave the file without or with saving.
 You have to press i or a to insert text though. 
 
-
 There is a directory called '.kube' that has config stuff in it.
 
 
