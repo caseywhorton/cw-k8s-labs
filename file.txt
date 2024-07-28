@@ -5,6 +5,7 @@ Pressing ESC will get you back to "normal" mode, and then commands like :q! and 
 leave the file without or with saving.
 You have to press i or a to insert text though. 
 
+
 There is a directory called '.kube' that has config stuff in it.
 
 
@@ -32,3 +33,13 @@ kubectl run nginx-yaml --image=nginx --dry-run=client -o yaml
 kubectl run nginx-yaml --image=nginx --dry-run=client -o yaml > nginx.yaml
 kubectl apply -f nginx.yaml
 kubectl get pods -o wide "this will display a lot more information about the running pods in your namespace."
+
+
+
+
+"executing commands in the pod"
+Some pods will have /bin/bash, others will have /bin/sh, others will have /bin/
+Use this command to get started: 
+kubectl exec -it <name of pod> /bin/bash
+Then you will see your cursor at the root of the node
+Use exit to leave
