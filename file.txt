@@ -7,8 +7,6 @@ You have to press i or a to insert text though.
 
 There is a directory called '.kube' that has config stuff in it.
 
-
-
 kubectl config -h 
 kubectl config get-context
 kubectl config use-context
