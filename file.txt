@@ -6,6 +6,8 @@ leave the file without or with saving.
 You have to press i or a to insert text though. 
 
 
+********** Configuration and Context **********
+
 There is a directory called '.kube' that has config stuff in it.
 
 kubectl config -h 
@@ -15,6 +17,8 @@ kubectl run ngingx --image=nginx
 "This will create a pod from the docker registry".
 
 You can go into the .kube/config file in the home directory and see API keys and ports and stuff like that.
+
+********** Pods **********
 
 kubectl describe pod <name of pod>
 Gives some great information on the pod.
