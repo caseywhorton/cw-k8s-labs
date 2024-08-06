@@ -28,8 +28,10 @@ An init container can do something like checking connection statuses, and only i
 Even though it is not always advised, you can edit the yaml using:
 kubectl edit pod ngingx-cw
 
-kubectl run nginx-yaml --image=nginx --dry-run=client -o yaml
+********** Dry Runs **********
+These are great when you want to see the kubernetes generated yaml for a run or deployment without actually deploying.
 
+kubectl run nginx-yaml --image=nginx --dry-run=client -o yaml
 kubectl run nginx-yaml --image=nginx --dry-run=client -o yaml > nginx.yaml
 kubectl apply -f nginx.yaml
 kubectl get pods -o wide "this will display a lot more information about the running pods in your namespace."
