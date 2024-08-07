@@ -29,6 +29,7 @@ Even though it is not always advised, you can edit the yaml using:
 kubectl edit pod ngingx-cw
 
 ********** Dry Runs **********
+
 These are great when you want to see the kubernetes generated yaml for a run or deployment without actually deploying.
 
 kubectl run nginx-yaml --image=nginx --dry-run=client -o yaml
@@ -36,10 +37,8 @@ kubectl run nginx-yaml --image=nginx --dry-run=client -o yaml > nginx.yaml
 kubectl apply -f nginx.yaml
 kubectl get pods -o wide "this will display a lot more information about the running pods in your namespace."
 
+********** Executing Commands Inside a Pod **********
 
-
-
-"executing commands in the pod"
 Some pods will have /bin/bash, others will have /bin/sh, others will have /bin/
 Use this command to get started: 
 kubectl exec -it <name of pod> /bin/bash
