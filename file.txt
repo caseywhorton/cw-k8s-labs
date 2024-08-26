@@ -15,6 +15,7 @@ kubectl config use-context
 kubectl run ngingx --image=nginx 
 "This will create a pod from the docker registry".
 
+
 You can go into the .kube/config file in the home directory and see API keys and ports and stuff like that.
 
 ********** Pods **********
